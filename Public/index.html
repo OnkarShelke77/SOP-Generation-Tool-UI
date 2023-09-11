@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SOP Generation Tool</title>
+    <link rel="stylesheet" href="styles.css"> <!-- Add CSS file link -->
+</head>
+<body>
+    <div class="container">
+        <h1>SOP Generation Tool</h1>
+        <form action="/submit" method="POST">
+            <div class="form-group">
+                <label for="name">Full Name:</label>
+                <input type="text" id="name" name="name" required>
+            </div>
+
+            <div class="form-group">
+                <label for="name">Age:</label>
+                <input type="text" id="name" name="name" required>
+            </div>
+
+            <div class="form-group">
+                <label for="name">Highest Level of Education:</label>
+                <input type="text" id="name" name="name" required>
+            </div>
+
+            <div class="form-group">
+                <label for="name">Institute where you completed your highest level of education:</label>
+                <input type="text" id="name" name="name" required>
+            </div>
+
+            <div class="form-group">
+                <label for="name">Which country are you applying from?:</label>
+                <input type="text" id="name" name="name" required>
+            </div>
+            <div class="form-group">
+                <label>Did you pay your first year tuition?</label>
+                <div class="radio-options">
+                    <input type="radio" id="yes-tuition" name="tuition-payment" value="Yes" required>
+                    <label for="yes-tuition">Yes</label>
+                    <input type="radio" id="no-tuition" name="tuition-payment" value="No">
+                    <label for="no-tuition">No</label>
+                </div>
+            </div>
+            
+            
+            <!-- Add more form elements with labels and input fields for other questions -->
+            
+            <div class="form-group">
+                <label for="future-goals">What are your future goals?</label>
+                <textarea id="future-goals" name="future-goals" rows="4" required></textarea>
+            </div>
+
+            <div class="form-group">
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+            </div>
+            
+            <button type="submit">Submit</button>
+        </form>
+    </div>
+</body>
+</html>
